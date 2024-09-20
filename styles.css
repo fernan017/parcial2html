@@ -1,0 +1,350 @@
+.menu-personal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f0f0f0; /* Color de fondo del menú */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+.menu-personal img {
+    width: 60px; /* Tamaño de la imagen */
+    height: 60px;
+    border-radius: 50%; /* Imagen redonda */
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.info-personal p {
+    margin: 5px 0; /* Espaciado entre las líneas */
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+.info-personal p strong {
+    color: #e63946; /* Color rojo para resaltar */
+}
+
+.menu-personal:hover {
+    background-color: #e0e0e0; /* Cambio de color al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.contenedor-header {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header h1 span.txtRojo {
+    color: #ff4d4d;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.redes a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.nav-responsive {
+    display: none;
+}
+
+/* Sección Inicio */
+.inicio {
+    background: url('img/fondo.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.inicio .info h2 {
+    font-size: 48px;
+}
+
+
+.inicio .info span.txtRojo {
+    color: #ff4d4d;
+}
+
+.inicio .opciones {
+    margin-top: 30px;
+}
+
+.inicio .opciones .opcion {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Sección Nosotros */
+.nosotros .fila {
+    display: flex;
+    padding: 50px;
+}
+
+.nosotros .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center; /* Centra las opciones horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 15px; /* Espacio entre cada opción */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.opcion {
+    background-color: #e63946; /* Color de fondo de cada opción */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado dentro de cada opción */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 14px; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.opcion:hover {
+    background-color: #d62828; /* Cambio de color al pasar el mouse por encima */
+}
+
+.opciones .opcion:first-child {
+    margin-left: 0; /* Elimina cualquier margen izquierdo del primer elemento */
+}
+
+.opciones .opcion:last-child {
+    margin-right: 0; /* Elimina cualquier margen derecho del último elemento */
+}
+
+
+.nosotros img {
+    max-width: 100%;
+}
+
+.nosotros .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.nosotros .contenedor-titulo .numero {
+    font-size: 36px;
+    color: #ff4d4d;
+    margin-right: 15px;
+}
+
+.nosotros h2 {
+    margin: 0;
+}
+
+/* Botón Pase Libre */
+.fila-nosotros {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.fila-nosotros button {
+    background-color: #fff;
+    color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Sección Servicios */
+.servicios .fila {
+    display: flex;
+    padding: 50px;
+}
+
+.servicios .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.servicios img {
+    max-width: 100%;
+}
+
+.servicios table {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.servicios table td {
+    padding: 20px;
+}
+
+.servicios table i {
+    font-size: 36px;
+    color: #ff4d4d;
+}
+
+.servicios h3 span.txtRojo {
+    color: #ff4d4d;
+}
+
+/* Sección Comodidades */
+.comodidades .fila {
+    display: flex;
+    padding: 50px;
+}
+
+.comodidades .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.comodidades img {
+    max-width: 100%;
+}
+
+.comodidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comodidades ul li {
+    margin: 10px 0;
+}
+
+.comodidades ul li span {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Sección Galería */
+.galeria .fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.galeria .col {
+    flex: 1;
+    padding: 10px;
+}
+
+.galeria img {
+    max-width: 100%;
+}
+
+/* Sección Equipo */
+.equipo .fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.equipo .col {
+    text-align: center;
+    padding: 20px;
+}
+
+.equipo .col img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.equipo h2 {
+    margin-top: 10px;
+}
+
+/* Sección Contacto */
+.contacto .fila {
+    display: flex;
+    padding: 50px;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.contacto button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .redes a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nosotros .fila,
+    .servicios .fila,
+    .comodidades .fila,
+    .galeria .fila,
+    .equipo .fila,
+    .fila-nosotros {
+        flex-direction: column;
+    }
+
+    .nav-responsive {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #icono-nav {
+        cursor: pointer;
+    }
+}
